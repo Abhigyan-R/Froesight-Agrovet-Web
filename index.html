@@ -10,34 +10,67 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="/dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
 
 <body>
-    <div class="header">
-      <div class="navbar">
-          <div class="logo">
-            <a href="#"><img src="images/logo.png" width="85px"></a>
-          </div>
-    <nav>
-      <ul id="MenuItems">
-        <li><a href = "#">Home</a></li>
-        <li><a href = "#about-us">About Us</a></li>
-        <li><a href = "#service">Services</a></li>
-        <li><a href = "#portfolio">Portfolio</a></li>
-        <li><a href = "#contact-us">Contact Us</a></li>
-        <li><a href="marathi.html" class="btn">Marathi</a></li>
-      </ul>
-      
-    </nav>
-    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-    </div>
+    <section class = "sub-header">
+            <nav class="navbar navbar-inverse  navbar-fixed-top">
+                <div class = "nav-links" id="navLinks">
+                    <div class="lg:hidden text-2xl text-gray-600 m-3" onclick="hideMenu()">X</div>
+                    <ul>
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#about-us">About Us</a></li>
+                        <li><a href = "#service">Services</a></li>
+                        <li><a href = "#portfolio">Portfolio</a></li>
+                        <li><a href = "#contact-us">Contact Us</a></li>
+                        <li><a href="marathi.html" class="btn">Marathi</a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden space-y-2" onclick="showMenu()">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                </div>
+            </nav>
+            </section>
 
+<!-- Slideshow container -->
+<div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src= "images/1.png" style="width:100%">
+        
+      </div>
+      <div class="mySlides fade">
+          <img src= "images/3.png" style="width:100%">
+         
+        </div>
+        <div class="mySlides fade">
+          <img src="images/4.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+          <img src="images/5.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+          <img src="images/6.png" style="width:100%"> 
+        </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+    
 
+
+<!-----About Us------>
   <section class="about-us" id="about-us">
   <div class="rectangle">
   <h1>About Us</h1>
@@ -64,7 +97,7 @@
           <p>Our mission is to support for setting up cost effective models of goat rearing by enhancing farm productivity.</p>
       </div>
       <div class="about-col">
-          <img src="images/mission.jpeg">
+          <img src="images/mission.png">
       </div>
   </div>
   <br>
@@ -90,7 +123,7 @@
       <div id="Vision1" class="tabcontent">      
         <div class="row">
       <div class="about-col">
-          <img src="images/vision.jpeg">
+          <img src="images/vision.png">
       </div>
       <div class="about-col">
         <h2>Techno Based</h2>
@@ -102,7 +135,7 @@
 <div id="Vision2" class="tabcontent">
   <div class="row">
   <div class="about-col">
-          <img src="images/vision.jpeg">
+          <img src="images/vision.png">
       </div>
       <div class="about-col">
         <h2>Productivity</h2>
@@ -114,7 +147,7 @@
 <div id="Vision3" class="tabcontent">
   <div class="row">
   <div class="about-col">
-          <img src="images/vision.jpeg">
+          <img src="images/vision.png">
       </div>
       <div class="about-col">
         <h2>Cost Effective</h2>
@@ -126,7 +159,7 @@
 <div id="Vision4" class="tabcontent">
   <div class="row">
   <div class="about-col">
-          <img src="images/vision.jpeg">
+          <img src="images/vision.png">
       </div>
       <div class="about-col">
         <h2>Sustainability</h2>
@@ -138,7 +171,7 @@
 <div id="Vision5" class="tabcontent">
   <div class="row">
   <div class="about-col">
-          <img src="images/vision.jpeg">
+          <img src="images/vision.png">
       </div>
       <div class="about-col">
         <h2>Scientific Way</h2>
@@ -646,9 +679,10 @@ span.onclick = function() {
   document.getElementById(vision).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 </script>
 
-<!-------js for tab change------->
+<!-------js for tab change1------->
 <script>
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen1").click();
@@ -675,7 +709,7 @@ span.onclick = function() {
 }
 </script>
 
-<!-------js for tab change------->
+<!-------js for tab change2------->
 <script>
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen2").click();
@@ -701,6 +735,50 @@ span.onclick = function() {
   evt.currentTarget.className += " active";
 }
 </script>
+
+<!--------JavaScript for slider-------->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+<!--------JavaScript for nav Toggle menu-------->
+      <script>
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+              navLinks.style.right = "0";
+          }
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+          }
+          $('ul.nav').find('a').click(function(){
+          var $href = $(this).attr('href');
+          var $anchor = $('#'+$href).offset();
+          window.scrollTo($anchor.left,$anchor.top);
+          return false;
+});
+
+$(window).scroll(function() {
+if ($(window).scrollTop() >= 50) {
+  $('.navbar').css('background', 'rgba(0,0,0,0.25)')
+} else {
+  $('.navbar').css('background', 'transparent');
+}
+});
+      </script>
 
 <!-----Footer---->
 <footer>
@@ -767,7 +845,6 @@ span.onclick = function() {
     <section class="copyright">
         <p>Copyright &copy; 2022 <strong>Foresight Agrovet.</strong> All Rights Reserved.</p>
       </section>
-
 
 </body>
 </html>
