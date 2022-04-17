@@ -11,17 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="/dist/output.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        
 </head>
 
 <body>
+    <div class="sidebar-contact">
+    <div class="toggle"></div>
+    <h2>Contact Us</h2>
+    <div class="scroll">
+    <form>
+      <input type="text" name="" placeholder="Name">
+      <input type="email" name="" placeholder="Email">
+      <input type="rel" name="" placeholder="Phone Number">
+      <textarea placeholder="Type you message here"></textarea>
+      <input type="submit" name="" value="Send">
+    </form>
+    </div>
+  </div>
+
     <section class = "sub-header">
             <nav class="navbar navbar-inverse  navbar-fixed-top">
                 <div class = "nav-links" id="navLinks">
@@ -764,6 +780,16 @@ span.onclick = function() {
     }
   }
  </script>
+
+<!-------js for contact form------->
+<script>
+$(document).ready(function(){
+  $('.toggle').click(function(){
+    $('.sidebar-contact').toggleClass('active')
+    $('.toggle').toggleClass('active')
+  })
+})
+</script>
 
 <!-------js for tab change------->
 <script>
