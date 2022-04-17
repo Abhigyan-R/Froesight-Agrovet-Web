@@ -101,7 +101,7 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #a3bacf;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -180,7 +180,7 @@ p{
 }
 
 .btn:hover{
-    background: #bababa;
+    background: #ebebeb;
     color: black;
 }
 
@@ -199,8 +199,7 @@ p{
 .rec2{
     width:200px;
     height:15px;
-    color: white;
-    margin-left: 25px;
+    box-shadow: 2px 4px #bfbfbf;
 }
 .rectangle p{
     font-size: 18px;
@@ -330,7 +329,7 @@ p{
 .row h1{
     font-size: 60px;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     padding-bottom: 15px;
 }
 .about-col{
@@ -375,7 +374,6 @@ p{
 /* Style the buttons that are used to open the tab content */
 .tab button{
   background-color: #78b2c4;
-  float: left;
   outline: none;
   border: none;
   cursor: pointer;
@@ -393,7 +391,7 @@ p{
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccf3ff;
+  background-color: #ebebeb;
 }
 
 /* Style the tab content */
@@ -469,7 +467,6 @@ p{
   font-size: 60px;
   font-weight: 500;
   color: black;
-  font-family: sans-serif;
 }
 .content .box .text{
   font-weight: 400;
@@ -478,6 +475,7 @@ p{
   padding-bottom: 15px;
   bottom: 10px;
   position: relative;
+  text-align: center;
 }
 .box:hover { 
         transform: scale(1.1); 
@@ -527,7 +525,11 @@ p{
 .service-modal .ser-card img{
     width: 30%;
     display: block;
-    padding-bottom: 10px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .ser-card h2{
     font-size: 25px;
@@ -555,7 +557,7 @@ p{
         flex:0 0 50% ;
         max-width: 50%;
         position: relative;
-        padding:8px ;
+        padding:8px 8px 35px 8px;
         text-align: center;
     }
  
@@ -570,7 +572,7 @@ p{
 }
 
 /*modal image animation*/
-#myImg {
+.myImages {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -873,6 +875,9 @@ div.social {
     .row{
         text-align: center;
         flex-direction: column;
+    }
+    .row p{
+        text-align: center;
     }
     .rectangle{
     padding:10px 20px;
