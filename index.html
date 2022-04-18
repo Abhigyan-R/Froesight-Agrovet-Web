@@ -6,11 +6,9 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -20,6 +18,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
         <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
         
 </head>
 
@@ -32,6 +32,12 @@
       <input type="text" name="" placeholder="Name">
       <input type="email" name="" placeholder="Email">
       <input type="rel" name="" placeholder="Phone Number">
+      <select id="service" name="">
+      <option value="Goat Farm Consultancy">Goat Farm Consultancy</option>
+      <option value="Online Goat Clinic">Online Goat Clinic</option>
+      <option value="Goat Farming Book">Goat Farming Book</option>
+      <option value="Goat Farming Training">Goat Farming Training</option>
+      </select>
       <textarea placeholder="Type you message here"></textarea>
       <input type="submit" name="" value="Send">
     </form>
@@ -40,6 +46,7 @@
 
     <section class = "sub-header">
             <nav class="navbar navbar-inverse  navbar-fixed-top">
+              <a style="font-size: 28px;" href = "#"><strong>Foresight Agrovet</strong></a>
                 <div class = "nav-links" id="navLinks">
                     <div class="lg:hidden text-2xl text-gray-600 m-3" onclick="hideMenu()">X</div>
                     <ul>
@@ -65,6 +72,10 @@
         <img src= "images/1.png" style="width:100%">
         
       </div>
+      <div class="mySlides fade">
+          <img src= "images/2.png" style="width:100%">
+         
+        </div>
       <div class="mySlides fade">
           <img src= "images/3.png" style="width:100%">
          
@@ -204,7 +215,7 @@
   <div class="counter-up">
     <div class="content">
       <div class="box">
-        <div class="icon"><i class="fa fa-history"></i></div>
+        <div class="icon"><i class="fa fa-user-md"></i></div>
         <div class="text">Total Consultations</div>
         <div class="counter">100+</div>
       </div>
@@ -738,6 +749,7 @@ window.onclick = function(event) {
 }
 </script>
 
+
 <!--------JavaScript for the modal images-------->
 <script>
   // create references to the modal...
@@ -763,23 +775,6 @@ span.onclick = function() {
   modal1.style.display = "none";
 }
 </script>
-
-
-<!-------js for menutoggle()------->
- <script>
-  var MenuItems=document.getElementById("MenuItems");
-  MenuItems.style.maxHeight="0px";
-  function menutoggle(){
-    if(MenuItems.style.maxHeight=="0px")
-    {
-      MenuItems.style.maxHeight="200px";
-    }
-    else
-    {
-      MenuItems.style.maxHeight="0px";
-    }
-  }
- </script>
 
 <!-------js for contact form------->
 <script>
@@ -908,13 +903,6 @@ $(document).ready(function(){
           return false;
 });
 
-$(window).scroll(function() {
-if ($(window).scrollTop() >= 50) {
-  $('.navbar').css('background', 'rgba(0,0,0,0.25)')
-} else {
-  $('.navbar').css('background', 'transparent');
-}
-});
       </script>
 
 <!-----Footer---->

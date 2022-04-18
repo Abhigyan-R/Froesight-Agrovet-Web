@@ -38,6 +38,7 @@
   </div>
     <section class = "sub-header">
             <nav class="navbar navbar-inverse  navbar-fixed-top">
+              <a style="font-size: 28px;" href = "#"><strong>Foresight Agrovet</strong></a>
                 <div class = "nav-links" id="navLinks">
                     <div class="lg:hidden text-2xl text-gray-600 m-3" onclick="hideMenu()">X</div>
                     <ul>
@@ -63,6 +64,10 @@
         <img src= "images/1.png" style="width:100%">
         
       </div>
+      <div class="mySlides fade">
+          <img src= "images/2.png" style="width:100%">
+         
+        </div>
       <div class="mySlides fade">
           <img src= "images/3.png" style="width:100%">
          
@@ -202,7 +207,7 @@
   <div class="counter-up">
     <div class="content">
       <div class="box">
-        <div class="icon"><i class="fa fa-history"></i></div>
+        <div class="icon"><i class="fa fa-user-md"></i></div>
         <div class="text">एकूण सल्ला</div>
         <div class="counter">100+</div>
       </div>
@@ -771,23 +776,6 @@ span.onclick = function() {
 }
 </script>
 
-
-<!-------js for menutoggle()------->
- <script>
-  var MenuItems=document.getElementById("MenuItems");
-  MenuItems.style.maxHeight="0px";
-  function menutoggle(){
-    if(MenuItems.style.maxHeight=="0px")
-    {
-      MenuItems.style.maxHeight="200px";
-    }
-    else
-    {
-      MenuItems.style.maxHeight="0px";
-    }
-  }
- </script>
-
 <!-------js for tab change------->
 <script>
   // Get the element with id="defaultOpen" and click on it
@@ -903,14 +891,6 @@ span.onclick = function() {
           var $anchor = $('#'+$href).offset();
           window.scrollTo($anchor.left,$anchor.top);
           return false;
-});
-
-$(window).scroll(function() {
-if ($(window).scrollTop() >= 50) {
-  $('.navbar').css('background', 'rgba(0,0,0,0.25)')
-} else {
-  $('.navbar').css('background', 'transparent');
-}
 });
       </script>
 
