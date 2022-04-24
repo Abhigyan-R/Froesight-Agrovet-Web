@@ -14,6 +14,24 @@ body{
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'Roboto', sans-serif;
     }
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+    margin-top:16px;
+}
 /*-------Contact Form------*/
 .sidebar-contact{
   position:fixed;
@@ -108,6 +126,12 @@ h1, h2, h3, h4, h5, h6 {
     height : 100vh;
     width : 100%;
     background: transparent;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 naV{
     display : flex;
@@ -229,13 +253,6 @@ nav .fa{
     text-align: center;
 }
 
-
-
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-}
 p{
     color: black;
     font-size: 25px;
@@ -614,6 +631,7 @@ p{
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: 5px;
+
 }
 .ser-card h2{
     font-size: 25px;
@@ -671,15 +689,15 @@ p{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 70; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: white;
+  color: black;
 }
 
 /* Modal Content (image) */
@@ -689,6 +707,9 @@ p{
   width: 80%;
   max-width: 700px;
 }
+.modal-content1{
+    padding-top: 200px;
+}
 
 /* Caption of Modal Image */
 #caption {
@@ -697,7 +718,7 @@ p{
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: black;
   padding: 10px 0;
   height: 150px;
 }
@@ -725,7 +746,7 @@ p{
   position: absolute;
   padding-top: 5px;
   right: 35px;
-  color: #f1f1f1;
+  color: black;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -733,7 +754,7 @@ p{
 
 .close:hover,
 .close:focus {
-  color:#aad3fa;
+  color:grey;
   text-decoration: none;
   cursor: pointer;
 }
@@ -922,12 +943,15 @@ div.social {
   justify-content: space-around;
   font-size: 2.4em;
   flex-direction: row;
+
 }
 .social i {
   color: #097cad;
   padding-right: 5px;
 }
-
+.social a{
+    font-size: 1.1em;
+}
 .copyright {
     width: 100%;
     text-align: center;
